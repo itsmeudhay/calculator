@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="./Images/calculator.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="result" readonly tabindex="0">
+        <div class="buttons">
+            <button onkeypress="display('7')" onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display(' + ')">+</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display(' - ')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display(' * ')">X</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display(' % ')">%</button>
+            <button onclick="display(' / ')">/</button>
+            <button onclick="clearScreen()">AC</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <button id="colour">Theme</button>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
